@@ -13,10 +13,10 @@ public class C11String {
 		String d = "hello";
 		char e = '!';
 		String f = d + e;
-		System.out.println(f);
+		System.out.println(f); //hello!
 		
 		String g = d + 100;
-		System.out.println(g);
+		System.out.println(g); //hello100
 		
 		// 참조 타입 (객체) ; 필드와 메소드가 있음
 		String k = "bts";
