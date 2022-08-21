@@ -11,6 +11,8 @@ public class Exercise08 {
 		int sum = 0;
 		double avg = 0.0;
 		
+		/// 추가 확인 
+		
 		for (int i = 0; i < 3; i++) {
 				for(int j = 0; j < 5; j++) {
 					sum += array[i][j];
