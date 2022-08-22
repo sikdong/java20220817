@@ -10,15 +10,17 @@ public class Exercise08 {
 		
 		int sum = 0;
 		double avg = 0.0;
+		 
 		
-		/// 추가 확인 
-		
-		for (int i = 0; i < 3; i++) {
-				for(int j = 0; j < 5; j++) {
+		for (int i = 0; i < array.length; i++) {
+				for(int j = 0; j < array[i].length; j++) {
 					sum += array[i][j];
+					avg = (double) sum/10;
+				
 				}
 			}
 		 System.out.println("sum: " + sum);
+		 System.out.println("avg: " + avg);
 		}
 	}
 	
