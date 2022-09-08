@@ -5,12 +5,11 @@ import ch05.Week;
 public class EnumMethodExample {
 	public static void main(String[] args) {
 		//name() 메소드
-		
 		Week today = Week.SUNDAY;
 		String name = today.name();
 		System.out.println(name);
 		
-		//ordinal() 메소드
+		//ordinal()메소드
 		int ordinal = today.ordinal();
 		System.out.println(ordinal);
 		
@@ -23,11 +22,11 @@ public class EnumMethodExample {
 		System.out.println(result2);
 		
 		//valueOf() 메소드
-		if(args.length ==1) {
+		if(args.length == 1 ) {
 			String strDay = args[0];
 			Week weekDay = Week.valueOf(strDay);
 			if(weekDay == Week.SATURDAY || weekDay == Week.SUNDAY) {
-				System.out.println("주말 이군요");
+				System.out.println("주말이군요");
 			} else {
 				System.out.println("평일 이군요");
 			}
@@ -38,6 +37,5 @@ public class EnumMethodExample {
 		for(Week day : days) {
 			System.out.println(day);
 		}
-		
-	}
 }
+}	
