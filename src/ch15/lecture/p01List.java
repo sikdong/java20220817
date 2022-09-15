@@ -17,6 +17,7 @@ public class p01List {
 		//get : element 얻기
 		list1.get(0);
 		list1.get(1);
+		System.out.println(list1.get(0));
 		
 		// IndexOutOfBoundsException 주의
 //		System.out.println(list1.get(3));
