@@ -49,8 +49,7 @@ class Student {
 		return true;
 	}
 
-	@Override
-	public int compareTo(Student o) {
-		return this.score - o.score;
-	}
+//	public int compareTo(Student o) {
+//		return this.score - o.score;
+//	}
 }
