@@ -21,8 +21,7 @@ public class C06IntStream {
 				.average()
 				.getAsDouble();
 		System.out.println(r2);
-				
-		System.out.println(r2);
+			
 		System.out.println("----------");
 
 		// 주사위(1~6) 5번 던진 결과 출력 (작은 수 부터 출력)
@@ -41,13 +40,4 @@ public class C06IntStream {
 				.forEach(n -> System.out.println(n));
 	
 	}
-
-	@Override
-	public String toString() {
-		return "C06IntStream [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
-				+ super.toString() + "]";
-	}
-	
-
-	
 }
