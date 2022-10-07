@@ -14,6 +14,7 @@ public class solution7 {
 		int h = (int) f;
 		int i = (int) g;
 		char space = ' ';
+		int x = (int)space;
 		System.out.println(b);
 		System.out.println("Z는" + d);
 		System.out.println(e);
@@ -22,9 +23,12 @@ public class solution7 {
 		System.out.println(z);
 		System.out.println("z는" + y);
 		System.out.println(space);
+		System.out.println(solution("P", 15)); //result "E" 나와야 함
+		//A : 65, Z : 90,  a: 97,  z : 122
+		System.out.println(x);
 	}
 	
-    public String solution(String s, int n) {
+    public static String solution(String s, int n) {
         String answer = "";
         char[] arr = s.toCharArray();
         for (char item : arr){
