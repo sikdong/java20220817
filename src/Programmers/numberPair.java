@@ -3,72 +3,47 @@ package Programmers;
 import java.util.*;
 
 public class numberPair {
-	
-public static String largeNum(String s) {
-	String num = "";
-	int[] xnum = new int[s.length()];
-	for (int i = 0; i < xnum.length; i++) {
-		xnum[i] = Integer.parseInt(s.substring(i, i+1));
+	public static String largeNum(String s) {
+		String num = "";
+		int[] xnum = new int[s.length()];
+		for (int i = 0; i < xnum.length; i++) {
+			xnum[i] = Integer.parseInt(s.substring(i, i + 1));
 		}
-	Arrays.sort(xnum);
-	for(int i : xnum) {		
-		num += String.valueOf(i);
-	}
-	StringBuilder sb = new StringBuilder(num);
-	String answer = sb.reverse().toString();
-	return answer;
-}
-
-public static String answer(String a, String b) {
-	List<String> list = new ArrayList<String>();
-	for(int i = 0; i < a.length(); i++) {
-		list.add(a.substring(i, i+1));
-	}
-	
-	for(int i = 0; i < b.length(); i++) {
-		list.add(b.substring(i, i+1));
-	}
-	String temp = "";
-	String sol = "";
-	for(String item : list) {
-		sol += item;
-		temp = item;
-		if(temp.equals(item)) {
-			list.remove(item);
-			list.remove(temp);
+		Arrays.sort(xnum);
+		for (int i : xnum) {
+			num += String.valueOf(i);
 		}
+		StringBuilder sb = new StringBuilder(num);
+		String answer = sb.reverse().toString();
+		return answer;
 	}
-	return sol;
-}
-
-public static void main(String[] args) {
-	String a = largeNum("100");
-	String b = largeNum("123450");
-	
-	List<String> list = new ArrayList<String>();
-	for(int i = 0; i < a.length(); i++) {
-		list.add(a.substring(i, i+1));
-	}
-	
-	for(int i = 0; i < b.length(); i++) {
-		list.add(b.substring(i, i+1));
-	}
-	
-//	for(String s : list) {
-//		System.out.println(s);
-//	}
-	String temp = "";
-	String sol = "";
-	for(int i = 0; i < list.size(); i++) {
+	public static void main(String[] args) {
+		String[] arr = {"9", "8", "7", "6", "5", "4" ,"3", "2", "1", "0"};
+		String a = largeNum("02827");
+		String b = largeNum("28712");
+		String answer = "";
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println("-----");
 		
+		List<String> list = new ArrayList<String>();
+		while(true) {
+			int i = 0;
+			String temp ="";
+			for(String item : arr) {
+				if(item.equals(a.substring(i,i+1))) {
+					temp = item;
+				}
+			}
+			
+			for (int j = 0; j < b.length(); j++) {
+				if(temp.equals(b.substring(j,j+1))) {
+					answer+=temp;
+				}
+			}
+			i++;
+			
 		}
-	}
-	
-	for(String s : list) {
-		System.out.println(s);
+		
 	}
 }
-	
-
-
-}	
