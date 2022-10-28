@@ -10,7 +10,7 @@ public class giveUpMath {
 		int check1 = 0;
 		int check2 = 0;
 		int check3 = 0;
-		int j = 0;
+		int j = -1;
 		
 		while (go) {
 			for (int i = 0; i < num1.length; i++) {
@@ -26,7 +26,8 @@ public class giveUpMath {
 		}
 		System.out.println(j);
 		System.out.println(check1);
-		j = 0;
+		go = true;
+		j = -1;
 		while (go) {
 			for (int i = 0; i < num2.length; i++) {
 				if (num2[i] == answer[j]) {
@@ -39,8 +40,9 @@ public class giveUpMath {
 				go = false;
 			}
 		}
-		System.out.println(check2);
-		j=0;
+		System.out.println("check2는" + check2);
+		go=true;
+		j=-1;
 		while (go) {
 			for (int i = 0; i < num3.length; i++) {
 				if (num3[i] == answer[j]) {
